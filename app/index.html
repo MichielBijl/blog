@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    :root {
+      --color: blue;
+    }
+
+    body {
+      color: var(--color);
+    }
+  </style>
+</head>
+<body>
+  <script>
+    (function(){
+      var body = document.getElementsByTagName('body')[0];
+      var result = window.getComputedStyle(body).getPropertyValue('color');
+      console.log(result);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "Sortedam",
+  "private": true,
+  "version": "3.0.0",
+  "description": "Theme for my blog",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MichielBijl/blog.git"
+  },
+  "dependencies": {
+  },
+  "scripts": {
+  },
+  "devDependencies": {
+  }
+}
