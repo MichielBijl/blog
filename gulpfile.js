@@ -5,7 +5,6 @@ var postcss = require('gulp-postcss');
 gulp.task('css', function () {
   return gulp.src('app/css/core.css')
       .pipe(postcss([
-        require('autoprefixer'),
         // import MUST be before custom-properties for variables to work
         require('postcss-import'),
         require('postcss-calc'),
@@ -18,7 +17,8 @@ gulp.task('css', function () {
         require('postcss-media-minmax'),
         require('postcss-nesting'),
         require('postcss-nested'),
-        require('postcss-extend')
+        require('postcss-extend'),
+        require('autoprefixer')
       ]))
       .pipe(gulp.dest('build/css'))
       .pipe(connect.reload());
