@@ -1,0 +1,20 @@
+@custom-media --medium-viewport (width >= 40em);
+@custom-media --large-viewport (width >= 60em);
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+@custom-selector :--button button, [role="button"];
+@custom-selector :--current-nav a:focus, a:hover, [aria-current="page"];
+
+:root {
+  --header-text-colour: #444;
+  --nav-text-colour: var(--header-text-colour);
+  --nav-active-colour: hsl(224, 66%, 36%);
+
+  --line-height: 1.6em;
+  --sans-serif: lucida grande, sans-serif;
+  --body-family: georgia, serif;
+
+  --anchor-colour: hsl(224, 66%, 56%);
+  --button-colour: hsl(224, 66%, 56%);
+  --focus-colour: hsl(210, 100%, 87%);
+}

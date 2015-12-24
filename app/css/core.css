@@ -1,6 +1,9 @@
+/* Config; */
+@import "base/config.css";
 /* Placeholders need to be defined before use */
 @import "base/placeholders.css";
 
+/* Base; */
 @import "base/base.css";
 @import "base/header.css";
 @import "base/navigation.css";
@@ -8,30 +11,10 @@
 @import "base/footer.css";
 @import "base/animations.css";
 
+/* Modules; */
 @import "modules/article.css";
 @import "modules/block-text.css";
 @import "modules/forms.css";
 @import "modules/inline-text.css";
 @import "modules/media.css";
 @import "modules/skip-link.css";
-
-@custom-media --medium-viewport (width >= 40em);
-@custom-media --large-viewport (width >= 60em);
-
-@custom-selector :--heading h1, h2, h3, h4, h5, h6;
-@custom-selector :--button button, [role="button"];
-@custom-selector :--current-nav a:focus, a:hover, [aria-current="page"];
-
-:root {
-  --header-text-colour: #444;
-  --nav-text-colour: var(--header-text-colour);
-  --nav-active-colour: hsl(224, 66%, 36%);
-
-  --line-height: 1.6em;
-  --sans-serif: lucida grande, sans-serif;
-  --body-family: georgia, serif;
-
-  --anchor-colour: hsl(224, 66%, 56%);
-  --button-colour: hsl(224, 66%, 56%);
-  --focus-colour: hsl(210, 100%, 87%);
-}

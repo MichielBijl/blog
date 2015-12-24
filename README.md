@@ -1,2 +1,2 @@
 # blog
-WordPress template for my blog. This will double as a test with postcss and its many plugins.
+WordPress template for [my blog](http://www.michielbijl.nl/). This will double as a test with postcss and its many plugins.
