@@ -32,7 +32,7 @@ nav {
     border-top-color: var(--nav-active-colour);
     color: var(--nav-active-colour);
     text-decoration: none;
-    background: hsla(0, 100%, 100%, .3);
+    background: hsla(0, 100%, 100%, 0.3);
   }
 }
 

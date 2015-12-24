@@ -11,7 +11,7 @@
   --nav-active-colour: hsl(224, 66%, 36%);
 
   --line-height: 1.6em;
-  --sans-serif: lucida grande, sans-serif;
+  --sans-serif: "lucida grande", sans-serif;
   --body-family: georgia, serif;
 
   --anchor-colour: hsl(224, 66%, 56%);

@@ -1,6 +1,6 @@
 @keyframes main {
   0% {
-    background: lighten($focus-colour, 10%);
+    background: color(var(--focus-colour) lightness(10%));
   }
 
   100% {
