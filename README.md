@@ -23,3 +23,34 @@ I'd like to establish a vertical rhythm on the website. This is something that m
 * Large text size: 1.875rem (30px)
 * Large line-height: 1.6em (48px / 2.4rem)
 * Large margin top: 1.6em (48px / 2.4rem)
+
+## Learned and thought during development
+
+* Publish date
+  * Tried schema.org syntax; too much noise in source code
+  * `pubdate`is deprecated
+* Flexbox all the things!
+  * Header
+  * Navigation
+  * Article title
+* Who needs .classes anyway
+* No images for layout
+* Constrast 4.5 - design 1
+  * Had issues with colour contrast in the menu. Contrast now 5.82:1.
+* Tools used
+  * CodePen; all preparation for this design were done in CodePen.
+  * WebAim's colour contrast checker
+  * TPG's colour contrast checker app
+  * Sip Colour Picker
+  * Accessibility Inspector
+  * VoiceOver
+  * VirtualBox
+  * BrowserStack
+  * IRC / Slack
+    * w3c/a11ySlackers
+    * #a11y on Slack
+    * irc.w3.org #aria
+  * Spotify (can't code without music)
+* Include links to relevant specifications
+* Scripts used
+  * what-input for focus management
