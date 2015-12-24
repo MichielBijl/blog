@@ -1,6 +1,5 @@
 /* Config; */
 @import "base/config.css";
-/* Placeholders need to be defined before use */
 @import "base/placeholders.css";
 
 /* Base; */
