@@ -88,6 +88,7 @@ article + article {
 
 @media (--medium-viewport) {
   article header {
+    /* autoprefixer: off */
     display: flex;
     align-items: baseline;
     justify-content: space-between;

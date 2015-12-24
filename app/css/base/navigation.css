@@ -36,11 +36,12 @@ nav {
   }
 }
 
-@media (min-width: 40em) {
+@media (--medium-viewport) {
   nav {
     padding: 2rem 2rem 0;
 
     & ul {
+      /* autoprefixer: off */
       display: flex;
       flex-flow: row wrap;
       justify-content: flex-start;
