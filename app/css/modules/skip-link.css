@@ -1,0 +1,18 @@
+[href="#main"] {
+  position: fixed;
+  top: -100px;
+  left: 10px;
+  z-index: 100;
+  padding: 10px 20px;
+  background: #fff;
+  /* Set a delay on the transition so the skip link won't immediately disappear
+   * when it loses focus.
+   * Source: http://webaim.org/techniques/skipnav/#invisible
+   */
+  transition: top 0 2s;
+}
+
+[href="#main"]:focus {
+  top: 10px;
+  transition-delay: 0;
+}

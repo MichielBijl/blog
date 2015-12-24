@@ -1,0 +1,20 @@
+a {
+  color: var(--anchor-colour);
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+code {
+  display: inline;
+  margin: 0 .3em;
+  padding: .1rem .3rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  color: hsl(354, 66%, 56%);
+  vertical-align: baseline;
+  background: #efefef;
+}

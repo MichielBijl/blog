@@ -1,0 +1,9 @@
+@keyframes main {
+  0% {
+    background: lighten($focus-colour, 10%);
+  }
+
+  100% {
+    background: #fff;
+  }
+}

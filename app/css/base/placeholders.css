@@ -1,0 +1,46 @@
+/* NOTE: I'm not getting these to work: https://github.com/travco/postcss-extend */
+
+%line-circle {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: .5em;
+  height: .5em;
+  border: 1px solid #aaa;
+  border-radius: 100%;
+  box-shadow: 0 0 0 10px #fff;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  content: '';
+}
+
+%line-square {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: .5em;
+  height: .5em;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  box-shadow: 0 0 0 10px #fff;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  content: '';
+}
+
+%line-square-rotated {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: .5em;
+  height: .5em;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  box-shadow: 0 0 0 10px #fff;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #fff;
+  content: '';
+}

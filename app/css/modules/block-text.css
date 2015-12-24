@@ -1,0 +1,98 @@
+:--heading {
+  margin-bottom: 0;
+  font-family: var(--sans-serif);
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h1:first-child,
+h2:first-child {
+  margin-top: 0;
+}
+
+#home h1 {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+#home h2 {
+  font-size: 1.5em;
+}
+
+p {
+  line-height: var(--line-height);
+
+  article & {
+    text-indent: 2rem;
+  }
+
+  &:first-child::first-letter,
+  :not(p) + &:first-letter {
+    font-size: 1.2em;
+  }
+}
+
+blockquote {
+  margin-left: 2rem;
+  padding-left: 2rem;
+  border-left: 4px solid #aaa;
+
+  footer {
+    text-align: right;
+  }
+}
+
+main ul,
+main ol{
+  line-height: var(--line-height);
+}
+
+main :not(footer) > ul {
+  padding-left: 2em;
+  list-style: none;
+
+  ul {
+    padding-left: 1.5em;
+  }
+
+  li {
+    position: relative;
+
+    &::before {
+      display: block;
+      position: absolute;
+      top: calc((var(--line-height) / 2) - 0.2em);
+      left: -1em;
+      width: 0.5em;
+      height: 0.5em;
+      border: 1px solid #aaa;
+      border-radius: 100%;
+      overflow: hidden;
+      background: #fff;
+      content: '•';
+    }
+
+    li::before {
+      border-radius: 2px;
+    }
+
+    li li::before {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+main :not(footer) > ol {
+  padding-left: 2em;
+
+  ol {
+    padding-left: 1.5em;
+  }
+}

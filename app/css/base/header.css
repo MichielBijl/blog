@@ -1,0 +1,36 @@
+body > header {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+  position: relative;
+  margin: -10px -10px 0;
+  padding: 2rem 10px 0;
+  min-height: 200px;
+  overflow: hidden;
+  color: var(--header-text-colour);
+  font-family: var(--sans-serif);
+  text-align: center;
+  background:
+    no-repeat
+    fixed
+    linear-gradient(
+      to bottom right,
+      hsl(44, 100%, 73%),
+      hsl(37, 86%, 59%)
+    );
+  background-size: cover;
+
+  & p {
+    margin: 0;
+  }
+
+  & p:first-child {
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  & p:first-child:first-letter {
+    font-size: 1em;
+  }
+}

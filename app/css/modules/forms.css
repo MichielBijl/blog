@@ -1,0 +1,22 @@
+form {
+  counter-reset: fieldsets;
+}
+
+fieldset {
+  border: 0;
+  border-top: 1px solid #aaa;
+
+  & legend {
+    padding: 2px 20px;
+    font-family: var(--sans-serif);
+    counter-increment: fieldsets;
+  }
+
+  & legend::before {
+    content: counter(fieldsets) '. ';
+  }
+
+  & + & {
+    margin-top: 2rem;
+  }
+}
