@@ -17,7 +17,8 @@ gulp.task('css', function () {
         require('postcss-color-function'),
         require('postcss-media-minmax'),
         require('postcss-nesting'),
-        require('postcss-nested')
+        require('postcss-nested'),
+        require('postcss-extend')
       ]))
       .pipe(gulp.dest('build/css'))
       .pipe(connect.reload());
