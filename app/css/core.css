@@ -5,6 +5,7 @@
 @import "base/header.css";
 @import "base/navigation.css";
 @import "base/layout.css";
+@import "base/footer.css";
 @import "base/animations.css";
 
 @import "modules/article.css";
