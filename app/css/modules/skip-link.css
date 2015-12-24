@@ -10,9 +10,9 @@
    * Source: http://webaim.org/techniques/skipnav/#invisible
    */
   transition: top 0 2s;
-}
 
-[href="#main"]:focus {
-  top: 10px;
-  transition-delay: 0;
+  &:focus {
+    top: 10px;
+    transition-delay: 0;
+  }
 }

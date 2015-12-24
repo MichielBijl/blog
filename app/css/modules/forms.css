@@ -15,8 +15,8 @@ fieldset {
   & legend::before {
     content: counter(fieldsets) '. ';
   }
+}
 
-  & + & {
-    margin-top: 2rem;
-  }
+fieldset + fieldset {
+  margin-top: 2rem;
 }

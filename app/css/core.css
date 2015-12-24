@@ -3,6 +3,7 @@
 
 @import "base/base.css";
 @import "base/header.css";
+@import "base/navigation.css";
 @import "base/layout.css";
 @import "base/animations.css";
 
@@ -18,6 +19,7 @@
 
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 @custom-selector :--button button, [role="button"];
+@custom-selector :--current-nav a:focus, a:hover, [aria-current="page"];
 
 :root {
   --header-text-colour: #444;
