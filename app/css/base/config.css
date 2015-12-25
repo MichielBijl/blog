@@ -1,11 +1,20 @@
+/* These are the default viewport changes on which UI changes.
+ * But feel free to use other queries to fit your content.
+ */
 @custom-media --medium-viewport (width >= 40em);
 @custom-media --large-viewport (width >= 60em);
 
+/* Some handy selectors to minimise writing.
+ * Don't add :--list ul, ol; that is longer and thus defeats the purpose.
+ */
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 @custom-selector :--button button, [role="button"];
 @custom-selector :--current-nav a:focus, a:hover, [aria-current="page"];
 @custom-selector :--block-text p, blockquote, ul, ol;
 
+/* Declaration of all variables used throughout
+ * Have to be reviewed every now and then.
+ */
 :root {
   --header-text-colour: hsl(0, 0%, 17%);
 
@@ -32,4 +41,7 @@
   --ornament-space-titled: 0.8em;
   --ornament-border-colour: hsl(0, 0%, 30%);
   --ornament-border-width: 2px;
+
+  --blockquote-border-colour: var(--ornament-border-colour);
+  --blockquote-border-width: 4px;
 }

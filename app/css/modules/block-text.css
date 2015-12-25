@@ -40,9 +40,9 @@ p {
 }
 
 blockquote {
-  margin-left: 1.6em;
-  padding-left: 1.6em;
-  border-left: 4px solid #aaa;
+  margin-left: 0;
+  padding-left: calc(1.6em - var(--blockquote-border-width));
+  border-left: var(--blockquote-border-width) solid var(--blockquote-border-colour);
 
   & footer {
     margin-top: 0.8em;
@@ -94,6 +94,13 @@ main :not(footer) > ol {
   padding-left: 1.6em;
 
   & ol {
+    padding-left: 1.6em;
+  }
+}
+
+@media (--medium-viewport) {
+  blockquote {
+    margin-left: 1.6em;
     padding-left: 1.6em;
   }
 }
