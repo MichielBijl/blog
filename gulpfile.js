@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var nano = require('gulp-cssnano');
 var connect = require('gulp-connect');
 var postcss = require('gulp-postcss');
 
@@ -22,6 +23,12 @@ gulp.task('css', function () {
       ]))
       .pipe(gulp.dest('build/css'))
       .pipe(connect.reload());
+});
+
+gulp.task('minify', function () {
+  return gulp.src('build/css/core.css')
+    .pipe(nano())
+    .pipe(gulp.dest('sortedam'));
 });
 
 gulp.task('connect', function () {
