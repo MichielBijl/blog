@@ -34,15 +34,11 @@ h2:first-child {
   overflow: hidden;
 }
 
-/*#home h2 {
-  font-size: 1.5em;
-}*/
-
 p {
   line-height: var(--line-height);
 
   article & {
-    text-indent: 1.6em;
+    text-indent: 2rem;
   }
 
   &:first-child::first-letter,
@@ -51,10 +47,15 @@ p {
   }
 }
 
-blockquote {
-  margin-left: 0;
-  padding-left: calc(1.6em - var(--blockquote-border-width));
+blockquote,
+pre {
+  padding-left: calc(2rem - var(--blockquote-border-width));
   border-left: var(--blockquote-border-width) solid var(--blockquote-border-colour);
+}
+
+blockquote {
+  margin-right: 0;
+  margin-left: 0;
 
   & footer {
     margin-top: 0.8em;
@@ -63,62 +64,26 @@ blockquote {
 }
 
 pre {
-  padding-left: calc(1.6em - var(--pre-border-width));
-  border-left: var(--pre-border-width) solid var(--pre-border-colour);
+  max-width: 100%;
+  border-left-color: var(--pre-border-colour);
+  overflow-x: auto;
 }
 
 main ul,
 main ol{
+  padding-left: 2rem;
   line-height: var(--line-height);
 }
 
-main :not(footer) > ul {
-  padding-left: 1.6em;
-  /*list-style: none;*/
-
-  & ul {
-    padding-left: 1.6em;
-  }
-
-  & li {
-    position: relative;
-  }
-
-  & li::before {
-    display: block;
-    position: absolute;
-    top: calc((var(--line-height)em / 2) - 0.2em);
-    left: -1em;
-    width: 0.4em;
-    height: 0.4em;
-    border: 1px solid var(--body-text-colour);
-    border-radius: 100%;
-    overflow: hidden;
-    background: #fff;
-    /*content: '•';*/
-  }
-
-  & li li::before {
-    border-radius: 2px;
-  }
-
-  & li li li::before {
-    transform: rotate(45deg);
-  }
-}
-
-main :not(footer) > ol {
-  padding-left: 1.6em;
-
-  & ol {
-    padding-left: 1.6em;
-  }
+footer ul,
+footer ol {
+  padding-left: 0;
 }
 
 @media (--medium-viewport) {
   blockquote,
   pre {
-    margin-left: 1.6em;
-    padding-left: 1.6em;
+    margin-left: 2rem;
+    padding-left: 2rem;
   }
 }
