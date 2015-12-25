@@ -58,3 +58,5 @@ Space between text elements should be equal to one line height if it's flowing t
   * what-input for focus management
   * couple of lines to get skip link to work in WebKit/Blink browsers.
 * Picking the right font is hard
+* Maybe open all links to articles with #main to directly focus it?
+* There is such a thing as [`rel=tag`](http://www.w3.org/TR/html5/links.html#linkTypes)

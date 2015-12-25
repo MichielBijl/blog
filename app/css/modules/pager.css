@@ -1,0 +1,28 @@
+body > nav {
+  margin: 5rem auto 0;
+  max-width: var(--body-max-width);
+
+  & a {
+    font-size: 1.5em;
+  }
+
+  & [rel="next"] {
+    float: right;
+  }
+
+  span {
+    display: none;
+  }
+
+  &::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+@media (--medium-viewport) {
+  body > nav span {
+    display: inline;
+  }
+}

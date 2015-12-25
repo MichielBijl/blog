@@ -1,4 +1,4 @@
-nav {
+header nav {
   margin: 0 auto;
   width: 100%;
   max-width: var(--body-max-width);
@@ -37,7 +37,7 @@ nav {
 }
 
 @media (--medium-viewport) {
-  nav {
+  header nav {
     padding: 2rem 2rem 0;
 
     & ul {
