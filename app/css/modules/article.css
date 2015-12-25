@@ -9,12 +9,12 @@ article {
   }
 
   & * + *:not(li) {
-    margin-top: 1.6em;
+    margin-top: 2rem;
   }
 }
 
 article header + * {
-  margin-top: 1.6em;
+  margin-top: 2rem;
 }
 
 article > footer {
