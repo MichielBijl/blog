@@ -51,8 +51,8 @@ article > footer {
     top: 0;
     left: 0;
     width: 50%;
-    height: 1px;
-    background: #aaa;
+    height: var(--ornament-border-width);
+    background: var(--ornament-border-colour);
     content: '';
   }
 
@@ -62,11 +62,12 @@ article > footer {
     position: absolute;
     top: 0;
     left: 50%;
-    width: .5em;
-    height: .5em;
-    border: 1px solid #aaa;
+    width: var(--ornament-size);
+    height: var(--ornament-size);
+    border: var(--ornament-border-width) solid var(--ornament-border-colour);
     border-radius: 2px;
     box-shadow: 0 0 0 10px #fff;
+    box-sizing: content-box;
     transform: translate(-50%, -50%);
     background: #fff;
     content: '';
