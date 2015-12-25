@@ -37,7 +37,7 @@ Space between text elements should be equal to one line height if it's flowing t
   * Article title
 * Who needs .classes anyway
 * No images for layout
-* Constrast 4.5 - design 1
+* Contrast 4.5 - design 1
   * Had issues with colour contrast in the menu. Contrast now 5.82:1.
 * Tools used
   * CodePen; all preparation for this design were done in CodePen.
