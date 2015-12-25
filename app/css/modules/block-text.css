@@ -62,6 +62,11 @@ blockquote {
   }
 }
 
+pre {
+  padding-left: calc(1.6em - var(--pre-border-width));
+  border-left: var(--pre-border-width) solid var(--pre-border-colour);
+}
+
 main ul,
 main ol{
   line-height: var(--line-height);
@@ -111,7 +116,8 @@ main :not(footer) > ol {
 }
 
 @media (--medium-viewport) {
-  blockquote {
+  blockquote,
+  pre {
     margin-left: 1.6em;
     padding-left: 1.6em;
   }

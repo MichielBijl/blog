@@ -10,7 +10,7 @@
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 @custom-selector :--button button, [role="button"];
 @custom-selector :--current-nav a:focus, a:hover, [aria-current="page"];
-@custom-selector :--block-text p, blockquote, ul, ol;
+@custom-selector :--block-text p, blockquote, ul, ol, pre;
 
 /* Declaration of all variables used throughout
  * Have to be reviewed every now and then.
@@ -44,4 +44,8 @@
 
   --blockquote-border-colour: var(--ornament-border-colour);
   --blockquote-border-width: 4px;
+
+  /* -26% puts this at the same luminosity as ornament-colour */
+  --pre-border-colour: color(var(--anchor-colour) l(-26%));
+  --pre-border-width: var(--blockquote-border-width);
 }
