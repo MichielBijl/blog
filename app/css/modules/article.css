@@ -19,8 +19,6 @@ article header + * {
 
 article > footer {
   position: relative;
-  margin-top: 3rem;
-  padding-top: 1.6rem;
 
   & p {
     margin: 0;
@@ -44,40 +42,12 @@ article > footer {
   & li:not(:last-child)::after {
     content: ', ';
   }
-
-  &::before {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: var(--ornament-border-width);
-    background: var(--ornament-border-colour);
-    content: '';
-  }
-
-  &::after {
-    /*@extend line-square;*/
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: var(--ornament-size);
-    height: var(--ornament-size);
-    border: var(--ornament-border-width) solid var(--ornament-border-colour);
-    border-radius: 2px;
-    box-shadow: 0 0 0 10px #fff;
-    box-sizing: content-box;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    content: '';
-  }
 }
 
 article + article {
   margin-top: 4rem;
   padding-top: 4rem;
-  border-top: 1px solid #aaa;
+  border-top: var(--ornament-border-width) solid var(--ornament-border-colour);
 
   &::before {
     /*@extend line-circle;*/
@@ -85,11 +55,18 @@ article + article {
     position: absolute;
     top: 0;
     left: 50%;
-    width: .5em;
-    height: .5em;
-    border: 1px solid #aaa;
+    width: var(--ornament-size);
+    height: var(--ornament-size);
     border-radius: 100%;
-    box-shadow: 0 0 0 0.8em #fff;
+    box-shadow:
+      var(--ornament-space) 0 0 0 #fff,
+      var(--ornament-space) 0 0 var(--ornament-border-width) var(--ornament-border-colour),
+      -var(--ornament-space) 0 0 0 #fff,
+      -var(--ornament-space) 0 0 var(--ornament-border-width) var(--ornament-border-colour),
+      0 0 0 var(--ornament-border-width) var(--ornament-border-colour),
+      var(--ornament-space) 0 0 10px #fff,
+      -var(--ornament-space) 0 0 10px #fff,
+      0 0 0 10px #fff;
     transform: translate(-50%, -50%);
     background: #fff;
     content: '';
@@ -105,6 +82,7 @@ article + article {
 
     & time {
       position: relative;
+      margin-top: 0;
       padding-left: 1.6em;
       text-align: right;
     }

@@ -28,7 +28,8 @@
   --focus-colour: hsl(210, 100%, 87%);
 
   --ornament-size: 0.5em;
-  --ornament-space: 0.8em;
+  --ornament-space: 1em;
+  --ornament-space-titled: 0.8em;
   --ornament-border-colour: hsl(0, 0%, 30%);
   --ornament-border-width: 2px;
 }

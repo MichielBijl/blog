@@ -35,13 +35,13 @@ body > footer {
     height: var(--ornament-size);
     border-radius: 2px;
     box-shadow:
-      var(--ornament-space) -var(--ornament-space) 0 0 #fff,
-      var(--ornament-space) -var(--ornament-space) 0 var(--ornament-border-width) var(--ornament-border-colour),
-      -var(--ornament-space) var(--ornament-space) 0 0 #fff,
-      -var(--ornament-space) var(--ornament-space) 0 var(--ornament-border-width) var(--ornament-border-colour),
+      var(--ornament-space-titled) -var(--ornament-space-titled) 0 0 #fff,
+      var(--ornament-space-titled) -var(--ornament-space-titled) 0 var(--ornament-border-width) var(--ornament-border-colour),
+      -var(--ornament-space-titled) var(--ornament-space-titled) 0 0 #fff,
+      -var(--ornament-space-titled) var(--ornament-space-titled) 0 var(--ornament-border-width) var(--ornament-border-colour),
       0 0 0 var(--ornament-border-width) var(--ornament-border-colour),
-      var(--ornament-space) -var(--ornament-space) 0 10px #fff,
-      -var(--ornament-space) var(--ornament-space) 0 10px #fff,
+      var(--ornament-space-titled) -var(--ornament-space-titled) 0 10px #fff,
+      -var(--ornament-space-titled) var(--ornament-space-titled) 0 10px #fff,
       0 0 0 10px #fff;
     transform: translate(-50%, -50%) rotate(45deg);
     background: #fff;
