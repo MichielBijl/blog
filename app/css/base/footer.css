@@ -1,18 +1,27 @@
 body > footer {
   position: relative;
   margin: 5rem auto 0;
-  padding-top: 1rem;
-  max-width: 40em;
+  padding-top: 1.6em;
+  padding-bottom: 0.6em;
+  max-width: var(--body-max-width);
   font-family: var(--sans-serif);
+
+  & p {
+    margin: 0;
+  }
+
+  & p + p {
+    margin-top: 0.5em;
+  }
 
   &::before {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
-    height: 1px;
-    background: #aaa;
+    width: 100%;
+    height: var(--ornament-border-width);
+    background: var(--ornament-border-colour);
     content: '';
   }
 
@@ -22,13 +31,32 @@ body > footer {
     position: absolute;
     top: 0;
     left: 50%;
-    width: .5em;
-    height: .5em;
-    border: 1px solid #aaa;
+    width: var(--ornament-size);
+    height: var(--ornament-size);
     border-radius: 2px;
-    box-shadow: 0 0 0 10px #fff;
+    box-shadow:
+      var(--ornament-space) -var(--ornament-space) 0 0 #fff,
+      var(--ornament-space) -var(--ornament-space) 0 var(--ornament-border-width) var(--ornament-border-colour),
+      -var(--ornament-space) var(--ornament-space) 0 0 #fff,
+      -var(--ornament-space) var(--ornament-space) 0 var(--ornament-border-width) var(--ornament-border-colour),
+      0 0 0 var(--ornament-border-width) var(--ornament-border-colour),
+      var(--ornament-space) -var(--ornament-space) 0 10px #fff,
+      -var(--ornament-space) var(--ornament-space) 0 10px #fff,
+      0 0 0 10px #fff;
     transform: translate(-50%, -50%) rotate(45deg);
     background: #fff;
     content: '';
+  }
+}
+
+@media (min-width: 50em) {
+  body > footer {
+    /* autoprefixer: off */
+    display: flex;
+    justify-content: space-between;
+
+    & p + p {
+      margin-top: 0;
+    }
   }
 }

@@ -1,17 +1,26 @@
 article {
   position: relative;
   margin: 0 auto;
-  max-width: 40em;
+  max-width: var(--body-max-width);
+
+  & :--block-text {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+  }
+
+  & * + *:not(li) {
+    margin-top: 1.6em;
+  }
 }
 
 article header + * {
-  margin-top: 1em;
+  margin-top: 1.6em;
 }
 
-article footer {
+article > footer {
   position: relative;
-  margin-top: 2rem;
-  padding-top: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.6rem;
 
   & p {
     margin: 0;
@@ -79,7 +88,7 @@ article + article {
     height: .5em;
     border: 1px solid #aaa;
     border-radius: 100%;
-    box-shadow: 0 0 0 10px #fff;
+    box-shadow: 0 0 0 0.8em #fff;
     transform: translate(-50%, -50%);
     background: #fff;
     content: '';
@@ -95,7 +104,7 @@ article + article {
 
     & time {
       position: relative;
-      padding-left: 20px;
+      padding-left: 1.6em;
       text-align: right;
     }
 

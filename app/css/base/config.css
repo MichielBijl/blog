@@ -4,17 +4,31 @@
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 @custom-selector :--button button, [role="button"];
 @custom-selector :--current-nav a:focus, a:hover, [aria-current="page"];
+@custom-selector :--block-text p, blockquote, ul, ol;
 
 :root {
-  --header-text-colour: #444;
-  --nav-text-colour: var(--header-text-colour);
-  --nav-active-colour: hsl(224, 66%, 36%);
+  --header-text-colour: hsl(0, 0%, 17%);
 
-  --line-height: 1.6em;
-  --sans-serif: "lucida grande", sans-serif;
-  --body-family: georgia, serif;
+  --nav-active-colour: hsl(224, 66%, 36%);
+  --nav-active-background: hsla(0, 100%, 100%, 0.3);
+  --nav-text-colour: var(--header-text-colour);
+  --nav-font-family: Tahoma, "Helvetica Neue", Helvetica, sans-serif;
+
+  --body-padding: 1em;
+  --body-max-width: 50em;
+  --body-text-colour: hsl(0, 0%, 17%);
+  --body-family: "PT Serif", Palatino, Athelas, Georgia, serif;
+
+  --sans-serif: "Lucida Grande", sans-serif;
+  --heading-family: Tahoma, var(--sans-serif);
+  --line-height: 1.6;
 
   --anchor-colour: hsl(224, 66%, 56%);
   --button-colour: hsl(224, 66%, 56%);
   --focus-colour: hsl(210, 100%, 87%);
+
+  --ornament-size: 0.5em;
+  --ornament-space: 0.8em;
+  --ornament-border-colour: hsl(0, 0%, 30%);
+  --ornament-border-width: 2px;
 }

@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
+}
 
-  &::before,
-  &::after {
-    box-sizing: inherit;
-  }
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 html {
@@ -14,7 +14,8 @@ html {
 
 body {
   margin: 0;
-  padding: 10px;
-  color: #444;
+  padding: var(--body-padding);
+  color: var(--body-text-colour);
   font-family: var(--body-family);
+  line-height: 1.6;
 }

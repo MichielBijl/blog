@@ -8,7 +8,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 1.875rem;
 }
 
 h1:first-child,
@@ -22,15 +22,15 @@ h2:first-child {
   overflow: hidden;
 }
 
-#home h2 {
+/*#home h2 {
   font-size: 1.5em;
-}
+}*/
 
 p {
   line-height: var(--line-height);
 
   article & {
-    text-indent: 2rem;
+    text-indent: 1.6em;
   }
 
   &:first-child::first-letter,
@@ -40,11 +40,12 @@ p {
 }
 
 blockquote {
-  margin-left: 2rem;
-  padding-left: 2rem;
+  margin-left: 1.6em;
+  padding-left: 1.6em;
   border-left: 4px solid #aaa;
 
   & footer {
+    margin-top: 0.8em;
     text-align: right;
   }
 }
@@ -55,11 +56,11 @@ main ol{
 }
 
 main :not(footer) > ul {
-  padding-left: 2em;
-  list-style: none;
+  padding-left: 1.6em;
+  /*list-style: none;*/
 
   & ul {
-    padding-left: 1.5em;
+    padding-left: 1.6em;
   }
 
   & li {
@@ -69,15 +70,15 @@ main :not(footer) > ul {
   & li::before {
     display: block;
     position: absolute;
-    top: calc((var(--line-height) / 2) - 0.2em);
+    top: calc((var(--line-height)em / 2) - 0.2em);
     left: -1em;
-    width: 0.5em;
-    height: 0.5em;
-    border: 1px solid #aaa;
+    width: 0.4em;
+    height: 0.4em;
+    border: 1px solid var(--body-text-colour);
     border-radius: 100%;
     overflow: hidden;
     background: #fff;
-    content: '•';
+    /*content: '•';*/
   }
 
   & li li::before {
@@ -90,9 +91,9 @@ main :not(footer) > ul {
 }
 
 main :not(footer) > ol {
-  padding-left: 2em;
+  padding-left: 1.6em;
 
   & ol {
-    padding-left: 1.5em;
+    padding-left: 1.6em;
   }
 }

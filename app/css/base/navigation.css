@@ -1,7 +1,7 @@
 nav {
   margin: 0 auto;
   width: 100%;
-  max-width: 40em;
+  max-width: var(--body-max-width);
 
   & ul {
     margin: 2rem 0;
@@ -20,7 +20,7 @@ nav {
     padding: 20px 0;
     border-top: 2px solid transparent;
     color: var(--nav-text-colour);
-    font-family: "helvetica neue", helvetica, sans-serif;
+    font-family: var(--nav-font-family);
     font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.2em;
@@ -32,7 +32,7 @@ nav {
     border-top-color: var(--nav-active-colour);
     color: var(--nav-active-colour);
     text-decoration: none;
-    background: hsla(0, 100%, 100%, 0.3);
+    background: var(--nav-active-background);
   }
 }
 
@@ -42,7 +42,7 @@ nav {
 
     & ul {
       /* autoprefixer: off */
-      display: flex;
+      display: inline-flex;
       flex-flow: row wrap;
       justify-content: flex-start;
       margin: 0;
