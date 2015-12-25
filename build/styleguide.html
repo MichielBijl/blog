@@ -1,0 +1,294 @@
+!DOCTYPE html>
+<html lang="en" id="styleguide">
+  <head>
+    <meta charset="UTF-8">
+    <title>Michiel Bijl: Accessibility advocate</title>
+    <link rel="stylesheet" href="css/core.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <a href="#main">Skip to main content</a>
+    <header role="banner">
+      <div>
+        <p>Michiel Bijl</p>
+        <p>Accessibility advocate and front-end author</p>
+      </div>
+      <nav role="navigation">
+        <ul>
+          <li><a href="/" aria-current="page">Home</a></li>
+          <li><a href="/archives">Archives</a></li>
+          <li><a href="/about-this-site">About this site</a></li>
+          <li><a href="/cv">Curriculum vitea</a></li>
+          <!-- <li><a href="/styleguide">Styleguide</a></li> -->
+        </ul>
+      </nav>
+    </header>
+    <main id="main" role="main">
+      <h1>Styleguide</h1>
+      <article>
+        <header>
+          <h2>There is research to be done…</h2>
+          <time datetime="2015-07-18"> <span>Published on </span>18th of July, 2015</time>
+        </header>
+        <p>…on the people who are still alive (and the components that haven't been build). This is a checklist of everything that needs to be build:</p>
+        <form>
+          <fieldset>
+            <legend>Components</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>
+                  <s>Fieldsets</s>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>
+                  <s>Form controls</s>
+                </label>
+                <ul>
+                  <li>No need really, don't have any forms…</li>
+                </ul>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>
+                  <s>Buttons</s>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled" checked="checked"/>Lists
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>Code blocks
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>Headings
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>Article tags
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled" checked="checked"/>Article publish date
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>Article footer
+                </label>
+                <ul>
+                  <li>Current separator is confusing</li>
+                </ul>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>Links
+                </label>
+                <ul>
+                  <li>Could do with a nice underline to make them stand out more.</li>
+                </ul>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled" checked="checked"/>Images
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>Figures
+                </label>
+                <ul>
+                  <li>Léonie said <code>figcaption</code> can be problematic. Link?</li>
+                </ul>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>Tables
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled" checked="checked"/>Paragraphs
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled" checked="checked"/>Navigation
+                </label>
+                <ul>
+                  <li>
+                    <s>hover/focus state is barely visable on displays with poor neighbour pixel contrast (e.g. LCD TV's).</s>
+                  </li>
+                  <li>Adjusted the colour to a darked shade of royalblue, removed transparency.
+                    <s>Need to test again on TV.</s>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled" checked="checked"/>Footer
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled" checked="checked"/>Skip link
+                </label>
+                <ul>
+                  <li>Made content focusable through JavaScipt.</li>
+                  <li>It hides after two seconds if it loses focus; gives people more time to see it if they tab too fast.</li>
+                </ul>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>Author details (for article detail page)
+                </label>
+                <ul>
+                  <li>
+
+                    Not sure how to do the markup for this. <a href="https://web-a11y.slack.com/archives/general/p1437276546000092">Asked in #a11y on Slack</a>.
+                    <ul>
+                      <li>Garcialo says depending on site design/pupose it should go in <code>&lt;footer&gt;</code> (owners website).</li>
+                      <li>Adrian is in favour of <code>&lt;aside&gt;</code>.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Pages</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>Home
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>Archives
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>About this site / biography
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>Styleguide
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" disabled="disabled"/>Article page
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+        <h3>Components</h3>
+        <section>
+          <h4>Buttons</h4>
+          <p>
+            <s>Not sure about the animation; it isn't too clear and uses quite a bit of code. I do like the colour though. </s>Removed the fancy animation, kept the colour, added active style.
+            <s>Need a better focus style.</s>Need better colours for reset and submit.
+            <s>Ask self if I really need buttons…</s>I don't really need any buttons…
+          </p>
+          <button type="button">Example button</button>
+          <button type="reset">Reset button</button>
+          <button type="submit">Submit button</button>
+        </section>
+        <section>
+          <h4>Links</h4>
+          <p>
+
+            This is a new design for <a href="http://www.michielbijl.nl">my current website</a>. It has been about a year and a half since my website got a makeover. In that time I learned a lot about accessibility, document structure, and design; so I figured it was about time.
+          </p>
+        </section>
+        <section>
+          <h4>Headings</h4>
+          <p>Headings styles differ a bit between the fronpage and detail pages. <s>Not sure how to handle the website title on detail pages. That should probably just be a <code>&lt;p&gt;</code> on all pages, but then what should be considered the <code>&lt;h1&gt;</code> on the frontpage? It feels a bit pointless to add something like “Article feed” or something.</s> Went ahead and added a <code>&lt;h1&gt;</code> on the frontpage that reads “Articles”. It is visually hidden on the frontpage. Not sure about the font family, though.</p>
+          <p>Need some alternate styles for <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code>; text size is too small. Maybe different colours?</p>
+          <h1 role="presentation">Page title</h1>
+          <h2 role="presentation">Article/sub title</h2>
+          <h3 role="presentation">Level three styling</h3>
+          <h4 role="presentation">Into the worm hole</h4>
+          <h5 role="presentation">Even deeper!</h5>
+          <h6 role="presentation">The end is near, no wait, this is the end.</h6>
+        </section>
+        <section>
+          <h4>Lists</h4>
+          <h5>Unordered list</h5>
+          <ul>
+            <li>Fruits
+              <ul>
+                <li>Apples</li>
+                <li>Melons</li>
+                <li>Bananas</li>
+              </ul>
+            </li>
+            <li>Drinks
+              <ul>
+                <li>Apple juice</li>
+                <li>Milk</li>
+                <li>Alchohol
+                  <ul>
+                    <li>Wine</li>
+                    <li>Whisky</li>
+                    <li>Sambuca</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h5>Ordered list</h5>
+          <ol>
+            <li>Write out list of components;</li>
+            <li>Research possible accessibility issues;</li>
+            <li>Document solutions and thoughts;</li>
+            <li>Code pages
+              <ol>
+                <li>Create collection for pages;</li>
+                <li>Create separate pens for pages.</li>
+              </ol>
+            </li>
+          </ol>
+        </section>
+        <section>
+          <h4>Author information</h4>
+          <p>This information—about me—will be placed at the bottom of articles on the article pages. Markedup with an <code>&lt;aside&gt;</code>.</p>
+          <aside>
+            <h2>About the author</h2>
+            <p>Michiel Bijl has written for the web since 2000. He started to research accessibility in 2014 and is now an Invited Export of the Protocols and Formats Working Group (PFWG), and participant of the Web Incubator Interest Group (WICG) at the W3C.</p><img src="http://dir.agosto.nl/portret.jpg" alt="Portret of Michiel Bijl"/>
+          </aside>
+        </section>
+        <footer>
+          <p>Last updated on
+            <time datetime="2015-07-20">20th of July, 2015</time>
+          </p>
+          <p>Tags:</p>
+          <ul>
+            <li><a href="/tags/html">html</a></li>
+            <li><a href="/tags/design">design</a></li>
+            <li><a href="/tags/accessibility">accessibility</a></li>
+            <li><a href="/tags/components">components</a></li>
+          </ul>
+        </footer>
+      </article>
+    </main>
+    <footer role="contentinfo">
+      <p>Words by Michiel Bijl</p>
+      <p>Built on WordPress</p>
+    </footer>
+    <script src="js/app.js" charset="utf-8"></script>
+  </body>
+</html>
