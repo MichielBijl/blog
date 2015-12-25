@@ -1,7 +1,5 @@
 article {
   position: relative;
-  margin: 0 auto;
-  max-width: var(--body-max-width);
 
   & :--block-text {
     margin-bottom: 0;

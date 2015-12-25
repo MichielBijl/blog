@@ -1,5 +1,7 @@
 main {
+  margin: 0 auto;
   padding-top: 4rem;
+  max-width: var(--body-max-width);
   background: #fff;
 
   &:focus {
