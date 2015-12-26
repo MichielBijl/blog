@@ -1,7 +1,5 @@
 (function () {
   var mainContent = document.getElementById('main');
-
-  console.log(mainContent);
   var skipLink = document.querySelectorAll('[href="#main"]')[0];
 
   skipLink.addEventListener('click', handleContentFocus);
