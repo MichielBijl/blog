@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var nano = require('gulp-cssnano');
+var rename = require("gulp-rename");
 var connect = require('gulp-connect');
 var postcss = require('gulp-postcss');
 
@@ -28,6 +29,7 @@ gulp.task('css', function () {
 gulp.task('minify', function () {
   return gulp.src('build/css/core.css')
     .pipe(nano())
+    .pipe(rename('style.css'))
     .pipe(gulp.dest('sortedam'));
 });
 
