@@ -12,3 +12,7 @@ figure {
 figcaption {
 
 }
+
+header + p > img {
+  margin-left: -2rem;
+}
