@@ -37,6 +37,10 @@ article > footer {
     display: inline-block;
   }
 
+  & li + li {
+    margin-left: 0.4em;
+  }
+
   & li:not(:last-child)::after {
     content: ', ';
   }
