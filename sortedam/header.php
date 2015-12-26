@@ -11,7 +11,7 @@
 <?php endif; ?>
   <head>
     <meta charset="UTF-8">
-    <title><?php wp_title('&emdash;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+    <title><?php wp_title('—', true, 'right'); ?> <?php bloginfo('name'); ?></title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
@@ -37,6 +37,7 @@
             <li><a href="/">Home</a></li>
           <?php endif; ?>
 
+          <li><a href="/about-this-site">About this site</a></li>
           <li><a href="/cv">Curriculum Vitae</a></li>
         </ul>
       </nav>

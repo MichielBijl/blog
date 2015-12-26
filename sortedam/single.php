@@ -22,8 +22,8 @@ get_header();
 
 <nav>
   <?php
-    previous_post_link('%link', 'Previous post')
-    next_post_link('%link', 'Next post')
+    previous_post_link('%link', 'Previous post');
+    next_post_link('%link', 'Next post');
   ?>
 </nav>
 
