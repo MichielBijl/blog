@@ -4,7 +4,7 @@
  */
 ?>
 <!DOCTYPE html>
-<?php if(is_home() && !is_paged()): ?>
+<?php if(is_home()): ?>
   <html xmlns="http://www.w3.org/1999/xhtml" id="home">
 <?php else : ?>
   <html xmlns="http://www.w3.org/1999/xhtml">
