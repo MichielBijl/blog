@@ -3,8 +3,6 @@ body > nav {
   max-width: var(--body-max-width);
 
   & a {
-    /* NOTE: Not sure about colour */
-    /*color: color(var(--anchor-colour) l(-30%));*/
     color: var(--body-text-colour);
     font-size: 1.5em;
   }
