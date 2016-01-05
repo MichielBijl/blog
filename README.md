@@ -1,5 +1,5 @@
 # Blog
-WordPress template for [my blog](http://www.michielbijl.nl/). This will double as a test with PostCSS and its many plugins.
+Code for [my blog](http://www.michielbijl.nl/). Includes theme for WordPress (sortedam) and Jekyll. My blog currently runs on WordPress, but I want to [research the use of Jekyll](https://github.com/MichielBijl/blog/issues/14).
 
 ## Installation
 
