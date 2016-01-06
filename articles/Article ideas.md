@@ -15,3 +15,8 @@ This'll be a sort of notebook thing where I scribble down article ideas.
   * Create repo for this article, needs a _lot_ of code
 * On lists and headings
   * Got to find that conversation I had with Léonie on Gitter in the logs
+* Interesting accessibility links
+  * [Ian Pouncy](http://ianpouncey.com/)
+  * [What a developer looks like](http://marcysutton.com/this-is-what-a-developer-looks-like/)
+  * [Marcy Sutton](http://marcysutton.com/)
+  * Viking and Lumberjack Live
