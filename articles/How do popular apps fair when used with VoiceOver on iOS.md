@@ -4,6 +4,6 @@ After a [tweet by Steven Sawczyn](https://twitter.com/steveofmaine/status/685552
 
 ## Results
 
-* iMessage compose window: works very well
-* Telegram compose window: has a lot of unlabelled buttons
+* [iMessage compose window](https://www.youtube.com/watch?v=hT2JmcCVvZs): works very well
+* [Telegram compose window](https://www.youtube.com/watch?v=Qd5sRpB9m6o): has a lot of unlabelled buttons
 * Spotify: playlists and now playing window work very well (haven't tested other windows)
