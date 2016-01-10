@@ -7,6 +7,7 @@ This'll be a sort of notebook thing where I scribble down article ideas.
   * Remembering names to match faces is a handy feature.
   * Don't use the "news" stream much.
   * I talk to most people I care about in real life or on Twitter/Gitter.
+  * Think I can remove it after I’ve found the right employer.
 * Attending BAHFest
   * On writing a talk for BAHFest
   * On attending
