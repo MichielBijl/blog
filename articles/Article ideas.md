@@ -21,3 +21,4 @@ This'll be a sort of notebook thing where I scribble down article ideas.
   * [What a developer looks like](http://marcysutton.com/this-is-what-a-developer-looks-like/)
   * [Marcy Sutton](http://marcysutton.com/)
   * Viking and Lumberjack Live
+  * [How to design for accessibility](http://www.bbc.co.uk/gel/guidelines/how-to-design-for-accessibility) by Jamie Knight
