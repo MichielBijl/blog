@@ -39,4 +39,4 @@ My point is that in the ten years of my career I’ve never once worked for a co
 	<footer>—Søren Vilhelm</footer>
 </blockquote>
 
-I believe we as developers want to, and indeed need to, value our craft and projects we create. We all want to create beautiful things, and most of us do just that. I would very much like it if all those beautiful creations out there would work for all humans—hell, make it work for you cat too!
+I believe we as developers want to, and indeed need to, value our craft and projects we create. We all want to create beautiful things, and most of us do just that. I would very much like it if all those beautiful creations out there would work for all humans—hell, make it work for your cat too!
