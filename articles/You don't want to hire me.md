@@ -10,7 +10,7 @@ That may be so, but do you consider _every_ user when you build your application
 <blockquote>
 	When user experience doesn’t consider _all users_, it should be called some user experience.
 	Yes, SUX.
-	<footer>—Neaman Lerhmari</footer>
+	<footer>—Billy Gregory</footer>
 </blockquote>
 
 So ask yourself, do you work on a _UX_ or _SUX_ designed project? If it’s the latter, I’ve got bad news for you: you’re not getting any whisky from me.
