@@ -20,7 +20,7 @@ get_header(); ?>
   ?>
 </main>
 
-<nav>
+<nav aria-label="More articles">
   <?php
     next_posts_link('Older <span>posts</span>');
     previous_posts_link('Newer <span>posts</span>');

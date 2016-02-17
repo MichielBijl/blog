@@ -20,7 +20,7 @@ get_header();
   ?>
 </main>
 
-<nav>
+<nav aria-label="Other articles">
   <?php
     previous_post_link('%link', 'Previous post');
     next_post_link('%link', 'Next post');

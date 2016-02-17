@@ -27,7 +27,7 @@
         <p>Michiel Bijl</p>
         <p>Accessibility advocate and front-end author</p>
       </div>
-      <nav role="navigation">
+      <nav role="navigation" aria-label="Main">
         <ul>
 
           <!-- TODO: This must be possible some other way... -->

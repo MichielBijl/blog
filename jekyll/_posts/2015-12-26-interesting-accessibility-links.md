@@ -2,7 +2,7 @@
 layout: post
 title:  "Interesting accessibility links"
 date:   2015-12-26 19:47:12 +0100
-summary: "test"
+summary: "Accessibility is very interesting. A lot of people in the community seem to agree, because there are loads of great articles, talks, and other resources! This article lists some that I have read, watched, or otherwise enjoyed this year and would recommend to anyone interested in accessibility."
 tags: "accessibility"
 ---
 
